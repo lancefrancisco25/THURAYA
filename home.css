@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    transition: all 0.3s ease;
+} 
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url(../images/thuraya.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body::before,
+body::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+section{
+    height: 90vh;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 12;
+    border-radius: 25px;
+    margin: auto;
+    position: relative;
+}
+
+header .header-nav{
+    margin: auto;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav .logo img{
+    position: relative;
+    max-width: 80px;
+}
+
+.header-nav .menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-nav .menu li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+.header-nav .menu a{
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.header-nav .menu a:hover{
+    color: #f2f2f2;
+}
+
+/* Box content */
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+    flex-direction:column;
+    margin-left: 5%;
+}
+  /* Text Content */
+.content .textBox{
+    max-width: 600px;
+
+}
+.content .textBox h1{
+    text-transform: uppercase;
+}
+.content .textBox .icon{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #E5CBA4;
+    color: #111;
+    border-radius: 40px 50px 50px 0;
+    font-weight:bolder;
+    letter-spacing:1px;
+    text-decoration:none ;
+    font-size: 1rem;
+    margin-bottom: 10%;
+}
+
+
+
+/* Categories */
+.sci li img{
+    max-width: 50px;
+}
+
+.sci{
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    /* margin-left: 5%; */
+}
+.sci li{
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    transform: scale(0.9);
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.3);
+    border-radius: 30%;
+    overflow: hidden;
+    transition: transform 0.5s;
+    padding: 5px 8px;
+    background-color: #E5CBA4;
+    margin-right: 20px;
+}
+
+.sci a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top:-90px;
+    left:0;
+    background-color: #D1A773;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.sci a:hover::after{
+    top:0px;
+}
+
+
+.sci a:hover{
+    transform: translateY(10px);
+}
+.sci a .fab{
+    position: relative;
+    z-index:10 ;
+    transition: color 0.5s;
+}
+
+
+/* Product's card */
+.food_tile{
+    
+position: absolute;
+width: 160.54px;
+height: 202.95px;
+background: rgba(0, 0, 0, 0.4);
+box-shadow: -12px 40px 70px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+
+}
+.fda_product_img{
+position: fixed;
+left: 0%;
+/* width: 166.82px;
+height: 178.99px; */
+filter: drop-shadow(0px 8px 25px rgba(0, 0, 0, 0.25));
+transform: rotate(-2deg);
+}

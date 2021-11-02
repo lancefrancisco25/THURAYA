@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- Css link -->
+    <link rel="stylesheet" href="Index.css">
+
+
+    <!-- script of icons -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <!-- Owl carousel css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    
+    
+    
+    <title>THURAYA | HomePage</title>
+
+    <style>
+
+        
+        @media (max-width: 500px)
+        {   /* Image animation */    
+            .rotatingCont{
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                position: relative;
+                top: -249px;
+                left: -108px;
+                -webkit-animation: rotating 2s linear infinite;
+            }
+        
+            .thecontent{
+                border-radius: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 73%;
+                transform: translateX(65%);
+            }
+        
+            @-webkit-keyframes rotating {
+                from{
+                    -webkit-transform: rotate(-25deg);
+                }
+                to{
+                    -webkit-transform: rotate(180deg);
+                }
+            }
+            
+            /* End Image animation */
+
+         
+
+            /* Text animation  */
+            .container{
+                position: relative;
+                top:50px;
+                /* left:350px; */
+            }
+            .animation{
+                z-index: 1;
+                text-transform: uppercase;
+                font-family: 'roboto' , sans-serif;
+                font-size: 2rem;
+                /* Letter-spacing: 1px; */
+                color: #000000;
+                display: inline-block;
+                animation: fadeIn 1.5s forwards ;
+                opacity: 0;
+                transition-timing-function : cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            }
+
+            .first{
+                display: inline-block;
+                animation: firstspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                z-index: 1;
+                position : relative;
+                /* left: -4px; */
+                top:-45px;
+                font-weight: 500;
+            }
+
+            .slide{   
+                display: inline-flex;
+                overflow: hidden;
+            }
+
+            .second{   
+                color: #E5CBA4; 
+                font-weight: 900;
+                Z-index: -1;
+                display: inline-block;
+                animation : secondspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            }
+            span :before{
+                content: '';
+                animation: animate infinite 12s;
+            }
+        }
+        @media(min-width: 550px) {
+            
+            /* Image animation */   
+
+                .rotatingCont{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50px;
+                        position: relative;
+                        /* top: -249px; */
+                        top: -290px; 
+                        left: 260px;
+                        -webkit-animation: rotating 4s linear infinite;
+                    }
+                
+                    .thecontent{
+                        border-radius: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 47%;
+                        transform: translateX(125%);
+                    }
+                
+                    @-webkit-keyframes rotating {
+                        from{
+                            -webkit-transform: rotate(-20deg);
+                        }
+                        to{
+                            -webkit-transform: rotate(200deg);
+                        }
+                    }
+                
+            /* End Image animation */
+        /* Text animation  */
+            .container{
+                position: relative;
+                top:50px;
+                /* left:350px; */
+            }
+            .animation{
+                z-index: 1;
+                text-transform: uppercase;
+                font-family: 'roboto' , sans-serif;
+                font-size: 4rem;
+                /* Letter-spacing: 1px; */
+                color: #000000;
+                display: inline-block;
+                animation: fadeIn 1.5s forwards ;
+                opacity: 0;
+                transition-timing-function : cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            }
+
+            .first{
+                display: inline-block;
+                animation: firstspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                z-index: 1;
+                position : relative;
+                /* left: -4px; */
+                top:-45px;
+                font-weight: 500;
+            }
+
+            .slide{   
+                display: inline-flex;
+                overflow: hidden;
+            }
+
+            .second{   
+                color: #E5CBA4; 
+                font-weight: 900;
+                Z-index: -1;
+                display: inline-block;
+                animation : secondspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            }
+            span :before{
+                content: '';
+                animation: animate infinite 12s;
+            }
+
+        }
+            @keyframes animate{
+                0%{
+                    content: 'FOOD';
+                }
+                20%{
+                    content: 'COFEE';
+                }
+                40%{
+                    content: 'TEA';
+                }
+                60%{
+                    content: 'JUICE';
+                }
+                80%{
+                    content: 'CAKE';
+                }
+            }
+
+            @keyframes fadeIn{
+                0%{
+                    opacity: 0;
+                    transform : scale(1) ;
+                }
+                50%{
+                    opacity: 1;
+                    transform : scale(1.1) ;
+                }
+                100%{
+                    opacity: 1;
+                    transform: scale(1)
+                }
+            }
+
+            @keyframes firstspan{
+                0%{
+                    transform: translateX(50%);
+                }
+                60%{
+                    transform: translateX(50%);
+                }
+                100%{
+                    transform: translateX(0%);
+                }
+            }
+
+            @keyframes secondspan{
+                0%{
+                    transform: translateX(-100%);
+                }
+                60%{
+                    transform: translateX(-100%);
+                }
+                100%{
+                    transform: translateX(0%);
+                }
+            }
+        /* End of Text animation  */
+
+        </style>
+</head>
+<body>
+    <section>
+        <div class="title">
+            <a href="#" class="logo  "><img src="images/logo.PNG" alt=""></a>
+            <a href="" class="nav_img ">
+                <img src="images/panier.png" alt="">
+            </a>
+        </div>
+        <!-- Banner design -->
+
+        <div class="container">
+            <div class="animation ">
+                <p class="first">Taste OUR</p>
+                <span class="slide">
+                    <span class="second"></span>
+                </span>
+            </div>
+        </div>
+        <div class="banner">
+            
+            <div class="content .d-sm-flex .flex-sm-column justify-content-center align-items-center">
+                
+                 
+                <div class="rotatingCont">
+                    <div class="thecontent">
+                        <img src="images/pngtree-green-cake.png" alt="" style="max-width:180px;z-index: -1;" class="product">
+                    </div>
+                </div>
+                <a href="#" class="btn">Order now</a>
+                <!-- categories -->
+                <ul class="sci ">
+                    <li>
+                        <a href="Cofee.html">
+                            <img  class="fab" src="images/coffee-cup.png" alt="">
+                        </a>   
+                    </li>
+                    <li class="list" data-filter="mobile" >
+                        <a href="Tea.html">
+                            <img  class="fab" src="images/green-tea.svg" alt="">
+                        </a>   
+                    </li>
+                    <li>
+                        <a href="juice.html">
+                            <img  class="fab" src="images/drink.svg" alt="">
+                        </a>   
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img  class="fab" src="images/CAKE 1.svg" alt="">
+                        </a>   
+                    </li>
+                    
+                </ul>             
+            </div>
+            <!-- <div class="ban_img">
+                <img src="../images/pngtree-green-cake.png" alt="" id="item1">
+            </div> -->
+        </div>
+        
+        
+        <!-- Item List -->
+            <div class="items owl-carousel" style="height: 450px;">
+                <div class="box ">
+                    <div class="imgBx">
+                        <img src="images/cake.png" alt="" id="item2" onclick="imgSlider('../images/cake.png')" >
+                    </div>
+                    <div class="info">
+                        <h5>Cake</h5>
+                        <h6>Lorem, ipsum dolor.</h6>
+                        <p>350 DA</p>
+                    </div>
+                    <div class="like">
+                        <a href="#">
+                            <img src="../images/add_icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/pngtree-green-cake.png" alt="" id="item3" onclick="imgSlider('../images/pngtree-green-cake.png')">
+                    </div>
+                    <div class="info">
+                        <h5>Cake</h5>
+                        <h6>Lorem, ipsum dolor.</h6>
+                        <p>350 DA</p>
+                    </div>
+                    <div class="like">
+                        <a href="#">
+                            <img src="images/add_icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img srimages/pngtree-green-cake.png" alt="" id="item4">
+                    </div>
+                    <div class="info">
+                        <h5>Cake</h5>
+                        <h6>Lorem, ipsum dolor.</h6>
+                        <p>350 DA</p>
+                    </div>
+                    <div class="like">
+                        <a href="#">
+                            <img src="images/add_icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/pngtree-green-cake.png" alt="" id="item5">
+                    </div>
+                    <div class="info">
+                        <h5>Cake</h5>
+                        <h6>Lorem, ipsum dolor.</h6>
+                        <p>350 DA</p>
+                    </div>
+                    <div class="like">
+                        <a href="#">
+                            <img src="images/add_icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/pngtree-green-cake.png" alt="" id="item6">
+                    </div>
+                    <div class="info">
+                        <h5>Cake</h5>
+                        <h6>Lorem, ipsum dolor.</h6>
+                        <p>350 DA</p>
+                    </div>
+                    <div class="like">
+                        <a href="#">
+                            <img src="images/add_icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+    
+
+    <!-- jquery cdn link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- owl carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.items').owlCarousel({
+                pagination:false,
+                autoplay:true,
+                responsive:{
+                    0:{
+              items:2
+            },
+            500:{
+              items:2
+            },
+            
+            700:{
+              items:3
+            },
+            1000:{
+              items:4
+            },
+            1200:{
+              items:5
+            }
+          }
+        })
+    });
+    </script>
+
+
+    <script>
+        AOS.init();
+    </script>              
+
+
+         <!-- Scripts -->
+         <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.product').src = anything;
+
+            }
+        </script>
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <style>
+        /* body {
+  background: #eee;
+}
+
+.container {
+  position: relative;
+  left: 20rem;
+  transition: transform 2s;
+}
+.container.open{
+    transition: transform 0.5s;
+    transform: translateX(-200px);
+}
+.container.open .box {
+  transition: transform 2s;
+  transform: translateY(160px);
+}
+img{
+  width: 60px;
+  height: 60px;
+   background: #000; 
+  border-radius: 2px;
+  position: relative;
+  left: 20rem;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.box.open{
+   transition: transform 2s;
+    transform: translateX(-160px);
+} */
+
+body {
+  background: rgb(0, 0, 0);
+}
+.container {
+  position: fixed;
+  left: 20rem;
+  transition: transform 1s;
+}
+.container.open {
+  transition: transform 0.10s;
+  transform: translateX(-200px);
+}
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.container.open .box {
+  transition: transform 1s;
+  transform: translateY(160px);
+}
+
+    </style>
+</head>
+<body>
+        <div class="container">
+          <img class="box" src="../images/pngegg.png" alt="">
+        </div>
+
+<script>
+    $(function()
+    {
+    $('.container').click(function() {
+        $('.container').toggleClass('open');
+    })
+    }
+    )
+  </script>
+</body>
+</html>
